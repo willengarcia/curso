@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        .conteudo{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 10px;
+            background-color: bisque;
+            border: 1px solid black;
+            float: left;
+        }
+        /*
+        .conteudo1{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(238, 139, 18);
+            border: 1px solid black;
+            float: top; Podem "flutuar" sobre os outros elementos
+        }*/
+        .clear{
+            clear: both; /* "limpa" o fluxo flutuante na mesma direção que o float se encontra */
+        }
+    </style>
+</head>
+<body>
+    <h1>Elemento Flutuante</h1>
+    <div class="conteudo">
+        <p>Conteudo1</p>
+    </div>
+    <div class="conteudo">
+        <p>Conteudo2</p>
+    </div>
+    <div class="conteudo">
+        <p>Conteudo3</p>
+    </div>
+    <p class="clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, iste, rem facilis quam fugiat et quis consequuntur ut impedit aperiam obcaecati nam ipsam earum animi eaque! Impedit cupiditate perspiciatis voluptates?</p>
+    <div class="conteudo">
+        <p>Conteudo4</p>
+    </div>
+</body>
+</html>
