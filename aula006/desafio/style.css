@@ -37,3 +37,40 @@ nav > a:hover {
     border-radius: 3px 3px 3px 3px;
     transition: 0.3s;
 }
+#principal {
+    margin: auto;
+    width: 650px;
+}
+#principal > h2 {
+    color: rgb(192, 173, 3);
+    padding-top: 20px;
+}
+#recentes {
+    float: right;
+    position: absolute;
+    top: 192px;
+    left: 1122px;
+    width: 218px;
+}
+#recentes > article > h2 {
+    background-color: rgba(128, 128, 128, 0.555);
+}
+#recentes > article > p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#recentes > article > a {
+    text-decoration: none;
+    color: rgb(211, 191, 13);
+    display: block;
+    padding-top: 10px;
+}
+footer{
+    clear: both;
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    background-color: black;
+    color: aliceblue;
+}
