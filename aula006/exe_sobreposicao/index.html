@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição</title>
+    <style>
+        .conteudo1{
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: cornflowerblue;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1; /* altera a ordem de exibição quando o elemento está sobreposto, quanto maior o número, mais a frente ele aparece */
+        }
+        .conteudo2{
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: rgb(237, 200, 100);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+        }
+        .conteudo3{
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: rgb(237, 100, 146);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            z-index: 3;
+        }
+        .conteudo1:hover, .conteudo2:hover, .conteudo3:hover{
+            z-index: 2;
+            scale: 1000%;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo1">
+
+    </div>
+    <div class="conteudo2">
+
+    </div>
+    <div class="conteudo3">
+
+    </div>
+</body>
+</html>

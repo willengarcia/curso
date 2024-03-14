@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        #conteiner{
+            background-color: cadetblue;
+            width: 600px;
+            margin: auto;
+            padding: 10px;
+            position: relative;
+        }
+        h1{
+            position: static;
+        }
+        p{
+            position: static;
+            width: 440px;
+        }
+        .relative{
+            position: relative; /* propriedades de deslocamento top, right, bottom e left positivamente ou negativamente*/
+            border: 1px solid black;
+            top: -20px; /* movimenta 20px para baixo */
+            left: 80px; /* movimenta 80px para direita */
+            background-color: coral;
+        }
+        .absolute{
+            position: absolute; /* ele não afeta a posição dos outros elementos, causando sobreposição. Top, left, right, bottom. Ela é calculada em relação a tag pai e tem que está com a position diferente de static, se não pega o body como referência de posição*/
+            top: 0px;
+            right: 20px;
+            background-color: darkgoldenrod;
+            border: 1px solid black;
+        }
+        .fixed{
+            position: fixed; /* se rolar pelo documento, ele fica fixo em relação a janela do navegador */
+            top: 0px;
+            left: 0px;
+            background-color: darkgreen;
+            border: 1px solid black;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <h1>Posicionamentos</h1>
+        <p class="relative"><strong>P1</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eos vel voluptatum, odio deleniti eveniet at ut earum dolorum error quaerat praesentium? Perspiciatis, quibusdam quidem quisquam aspernatur non placeat architecto.</p>
+        <p class="absolute"><strong>P2</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eos vel voluptatum, odio deleniti eveniet at ut earum dolorum error quaerat praesentium? Perspiciatis, quibusdam quidem quisquam aspernatur non placeat architecto.</p>
+        <p class="fixed"><strong>P3</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eos vel voluptatum, odio deleniti eveniet at ut earum dolorum error quaerat praesentium? Perspiciatis, quibusdam quidem quisquam aspernatur non placeat architecto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore laborum modi aut facere saepe vero sapiente fuga cumque sint harum? Suscipit eius sunt odio error sequi nihil debitis et minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore laborum modi aut facere saepe vero sapiente fuga cumque sint harum? Suscipit eius sunt odio error sequi nihil debitis et minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore laborum modi aut facere saepe vero sapiente fuga cumque sint harum? Suscipit eius sunt odio error sequi nihil debitis et minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore laborum modi aut facere saepe vero sapiente fuga cumque sint harum? Suscipit eius sunt odio error sequi nihil debitis et minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore laborum modi aut facere saepe vero sapiente fuga cumque sint harum? Suscipit eius sunt odio error sequi nihil debitis et minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore laborum modi aut facere saepe vero sapiente fuga cumque sint harum? Suscipit eius sunt odio error sequi nihil debitis et minima.</p>
+    </div>
+</body>
+</html>

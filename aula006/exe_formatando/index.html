@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Link</title>
+    <style>
+        a{
+            background-color: chartreuse;
+            color: black;
+            text-decoration: none;
+        }
+        /* Links não visitados */ 
+        a:link{
+            color: rgb(0, 0, 0);
+            background-color: coral;
+        }
+        /* Links visitados */
+        a:visited{
+            color: darkred;
+            background-color: aqua;
+        }
+        /* Passa o mouse por cima */
+        a:hover{
+            background-color: fuchsia;
+        }
+        /* Quando clica no link */
+        a:active{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Google</a> |
+    <a href="#">Youtube</a> |
+    <a href="#">Tecmundo</a> |
+    <a href="#">Python</a> |
+    <a href="#">Facebook</a>
+</body>
+</html>

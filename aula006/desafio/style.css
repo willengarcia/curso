@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Madimi One", sans-serif;
+}
+header{
+    background-color: rgb(211, 191, 13);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
+header > #tec, #blog {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+header > #blog {
+    color: aliceblue;
+    font-family: "Madimi One", sans-serif;
+}
+nav > a {
+    margin: 0px 20px;
+    color: aliceblue;
+    padding: 5px;
+    text-decoration: none;
+}
+nav > a:hover {
+    color: rgb(211, 191, 13);
+    background-color: aliceblue;
+    border-radius: 3px 3px 3px 3px;
+    transition: 0.3s;
+}
