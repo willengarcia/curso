@@ -2,31 +2,176 @@
 *{
     padding: 0px;
     margin: 0px;
-}
-body {
-    background-color: rgb(14, 62, 165);
+    box-sizing: content-box;
 }
 header {
-    width: 100%;
-    height: 233px;
+    width: auto;
     margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 233px;
     background-image: url('imagens/fundo.png');
     background-position: bottom center;
     background-repeat: repeat-x;
 }
-header > #logo{
-    float: left;
-    margin-left: 60px;
+header > #logo {
+    position: relative;
+    top: 22%;
+    left: 15%;
 }
-nav > ul > li{
-    clear: both;
+nav {
+    position: relative;
+    left: 31%;
+    top: 10%;
+    width: 650px;
+}
+nav > ul > li {
     display: inline-block;
+    padding: 15px;
+    background-color: darkred;
+    color: aliceblue;
+}
+header> nav a {
+    color: aliceblue;
+    text-decoration: none;
+}
+header li:hover, a:hover {
+    background-color: aliceblue;
+    color: darkred;
+    transition: 0.3s;
 }
 header > #mapa {
+    display: inline;
+    position: relative;
+    bottom: 50%;
+    left: 73%;
+}
+
+/* Corpo Sessão 1 */
+section {
+    width: 70%;
+    margin: auto;
+}
+.artigos {
+    float: left;
+}
+#art_1 {
+    width: 15%;
+    margin-right: 15px;
+}
+#art_1 li {
+    list-style-type: none;
+    padding: 5px;
+}
+#art_1 h2{
+    background-color: rgba(3, 3, 88, 0.733);
+    margin-bottom: 10px;
+    text-align: center;
+}
+#art_1 label input {
+    font-size: 18px;
+}
+
+/* Corpo Sessão 2 */
+#art_2 {
+    width: 46%;
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#art_2_div1{
+    margin-bottom: 20px;
+}
+#art_2_div1 h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(3, 3, 88, 0.733);
+}
+#art_2_div1 h3 {
+    background-color: crimson;
+    color: aliceblue;
+    text-indent: 50px;
+    font-size: 15px;
+    display: inline;
+}
+#art_2_div1 img {
+    width: 100%;
+    margin: auto;
+}
+
+#art_2_div2 h2{
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(3, 3, 88, 0.733);
+}
+#art_2_div2 img {
+    width: 27%;
+    margin: 5px 5px;
+    float: left;
+}
+#art_2_div2 li {
+    list-style-type: none;
+    float: left;
+}
+#art_2_div2 h4 {
+    margin-top: 15px;
+    float: left;
+}
+#art_2_div2 p {
+    float: left;
+}
+
+
+/* Corpo Sessão 3 */
+#art_3 {
+    float: left;
+    width: 30%;
+    margin: auto;
+    margin-left: 15px;
+}
+#art_3_div1 {
+    margin-bottom: 20px;
+}
+#art_3_div1 h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(3, 3, 88, 0.733);
+}
+#art_3_div1 h3 {
+    background-color: crimson;
+    color: aliceblue;
+    text-indent: 50px;
+    font-size: 15px;
+    display: inline;
+}
+#art_3_div1 img {
+    width: 100%;
+    margin: auto;
+}
+
+#art_3_div2 h2{
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(3, 3, 88, 0.733);
+}
+#art_3_div2 img {
+    width: 27%;
+    margin: 5px 5px;
     clear: both;
-    float: right;
-    top: 10px;
-    right: 0px;
+}
+#art_3_div2 li {
+    list-style-type: none;
+    margin: 10px;
+}
+#art_3_div2 img {
+    float: left;
+}
+
+/* Footer */
+footer > p{
+    clear: both;
+    text-align: center;
+    width: auto;
+    padding: 15px;
+    background-color: brown;
+    color: azure;
+    font-size: 18px;
 }
