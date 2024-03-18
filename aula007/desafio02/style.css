@@ -1,0 +1,52 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    width: 93%;
+    height: 250px;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url("imagens/topo-imagem-principal.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+#imagem {
+    height: 352px;
+    background-image: url('imagens/topo-imagem-lateral.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+nav {
+    width: 500px;
+    float: right;
+    position: relative;
+    right: 50px;
+    height: 250px;
+}
+nav img {
+    float: left;
+    margin-top: 15px;
+}
+#locais li, a{
+    display: inline-block;
+    margin-left: 15px;
+    color: rgba(153, 116, 23, 0.822);
+    list-style-type: none;
+    padding: 3px;
+}
+input { 
+    float: right;
+    background-color: rgba(108, 126, 66, 0.856);
+    padding: 3px;
+}
+#navegacao {
+    float: left;
+    width: 40%;
+}
+#navegacao li { 
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
