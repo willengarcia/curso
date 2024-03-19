@@ -3,6 +3,8 @@
     padding: 0px;
     margin: 0px;
 }
+
+/* Cabeçalho */
 header {
     width: 93%;
     height: 250px;
@@ -11,13 +13,14 @@ header {
     background-image: url("imagens/topo-imagem-principal.png");
     background-position: top left;
     background-repeat: no-repeat;
+    box-shadow: 1px 1px 7px rgba(134, 134, 134, 0.747);
 }
 header > img {
     float: left;
     margin: 20px 0px 0px 10px;
 }
 #imagem {
-    height: 352px;
+    height: 250px;
     background-image: url('imagens/topo-imagem-lateral.png');
     background-position: top right;
     background-repeat: no-repeat;
@@ -38,12 +41,14 @@ nav img {
     margin-left: 15px;
     color: rgba(153, 116, 23, 0.822);
     list-style-type: none;
-    padding: 3px;
+    padding: 4px;
 }
 input { 
     float: right;
     background-color: rgba(108, 126, 66, 0.856);
+    color: white;
     padding: 3px;
+    border-radius: 5px;
 }
 #navegacao {
     float: left;
@@ -53,4 +58,63 @@ input {
     list-style-type: none;
     margin: 5px;
     padding: 5px;
+}
+/* Animações Cabeçalho */
+nav > #locais li a:hover {
+    background-color: rgb(57, 77, 37);
+    color: rgba(221, 169, 38, 0.822);
+    border-radius: 5px;
+    transition: .3s;
+}
+#navegacao li a:hover {
+    background-color: rgb(57, 77, 37);
+    color: rgba(221, 169, 38, 0.822);
+    border-radius: 5px;
+    transition: .3s;
+}
+
+/* Sessão resumo */
+section {
+    width: 93%;
+    margin: auto;
+    margin-top: 5px;
+    box-shadow: 3px 3px 7px rgba(134, 134, 134, 0.911);
+}
+#resumo {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(250, 225, 3, 0.247);
+    float: left;
+    text-align: justify;
+    line-height: 1.5em;
+}
+#resumo > p {
+    margin: 10px 10px 10px 10px;
+}
+#resumo > h1 {
+    text-align: center;
+    color: rgba(104, 104, 5, 0.726);
+    text-decoration: underline;
+}
+
+/* Sessão sobre */
+#sobre {
+    width: 50%;
+    float: left;
+    background-color: rgb(197, 197, 156);
+}
+#sobre li{
+    list-style-type: none;
+    float: left;
+}
+#sobre img {
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+#sobre h2, #sobre p {
+    margin-top: 22px;
 }
