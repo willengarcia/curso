@@ -12,6 +12,10 @@ header {
     background-position: top left;
     background-repeat: no-repeat;
 }
+header > img {
+    float: left;
+    margin: 20px 0px 0px 10px;
+}
 #imagem {
     height: 352px;
     background-image: url('imagens/topo-imagem-lateral.png');
