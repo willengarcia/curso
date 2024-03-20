@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* 
+    -webkit- :  para chrome
+    -moz- : para mozila
+    -o- :  para opera
+*/
+/*  name: nome da animação ("exemplo")
+    duration: duração da animação (em s ou ms)
+    timing-function: quando é mais lentou ou mais rápido
+    delay: espera para começar a animação
+    iteration-count: quantas vezes é pra executar (int ou infinite)
+    direction: alternar a direção
+*/
+body {
+    background-color: rgb(255, 255, 255);
+    width: 98%;
+    height: 400px;
+}
+
+#caixa01::mou {
+    transform: rotate(50deg);
+    transition: 0.3s;
+    top: 52%
+}
+#caixa03:hover {
+    transform: rotate(-50deg);
+    transition: 0.3s;
+}
+
+.caixas {
+    height: 5px;
+    width: 20px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    background-color: rgb(0, 16, 161);
+}
