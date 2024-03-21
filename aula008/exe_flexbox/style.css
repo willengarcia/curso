@@ -7,15 +7,14 @@
     /* flex direction : row, row-reverse, column, column-reverse. O reverse altera a ordem no navegador, mas não no código fonte*/
     flex-direction: row;
     /* flex-wrap: nowrap(fica contido independente do w e h, wrap(faz a quebrada de acordo com w e h), wrap-reverse(faz a quebra de linha inversa das tag) */
-    flex-wrap: wrap; /* Quebra de Layout */
-    justify-content: center; /* usado para "mexer" na horizontal (width) ou distrinuir os espaçamentos entre os itens*/
-    align-items: baseline; /* usado para mexer na vertical (height) */
+    /* flex-wrap: nowrap; Quebra de Layout */
+    /* justify-content: center; usado para "mexer" na horizontal (width) ou distrinuir os espaçamentos entre os itens*/
+    /* align-items: baseline; usado para mexer na vertical (height) */
     /* align-itens: stretch(estica), center(centraliza, flex-start(colado no superior), flex-end(colado no inferior), baseline(linha base)*/
     background-color: dimgrey;
 }
 .item {
     width: 100px;
-    height: 100px;
     margin: 10px;
     background-color: coral;
     border: 1px solid black;

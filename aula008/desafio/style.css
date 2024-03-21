@@ -39,9 +39,27 @@ header img {
 /* Sessão */
 section {
     margin: auto;
-    width: 70%;
+    width: 80%;
     position: relative;
     bottom: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+article {
+    margin: 5px;
+}
+#sobre {
+    width: 710px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#video {
+    width: 300px;
+    margin-right: 5px;
+}
+#mapa {
+    width: 400px;
+    margin-left: 105px;
 }
