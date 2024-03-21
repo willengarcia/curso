@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#conteudo {
+    width: 600px;
+    height: 400px;
+    display: flex; /* deixa um item ao lado do outro, mas são flexitens */
+    /* flex direction : row, row-reverse, column, column-reverse. O reverse altera a ordem no navegador, mas não no código fonte*/
+    flex-direction: row;
+    /* flex-wrap: nowrap(fica contido independente do w e h, wrap(faz a quebrada de acordo com w e h), wrap-reverse(faz a quebra de linha inversa das tag) */
+    flex-wrap: wrap; /* Quebra de Layout */
+    justify-content: center; /* usado para "mexer" na horizontal (width) ou distrinuir os espaçamentos entre os itens*/
+    align-items: baseline; /* usado para mexer na vertical (height) */
+    /* align-itens: stretch(estica), center(centraliza, flex-start(colado no superior), flex-end(colado no inferior), baseline(linha base)*/
+    background-color: dimgrey;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: coral;
+    border: 1px solid black;
+}
+
+#conteudo1 {
+    width: 600px;
+    height: 400px;
+    background-color: dimgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(112, 38, 11);
+    border: 1px solid black;
+}
+.tag1{
+    /* flex-grow: 1;  Define a proporção de espaço ocupado por um item. Quanto maior p número, maior é o espaço que ele irá ocupar */
+    flex-shrink: 1; /* Define a capacidade de redução de tamanho do item, quanto maior o nº mais ele encolhe */
+    flex-basis: 100px; /* Define o tamanho inicial do item */
+}
+.tag2{
+    flex-shrink: 2;
+}
+.ordem{
+    order: -1; /* ordena os conteudos com base no flex */
+} 
