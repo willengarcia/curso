@@ -2,15 +2,20 @@
 body{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(0, 0, 0);
 }
 #disco {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
+    margin: auto;
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    animation-name: disco;
+    background-color: yellow;
+
+    animation-name: sol;
     animation-duration: 3s;
     animation-delay: 1s;
     animation-timing-function: ease-in;
@@ -18,131 +23,56 @@ body{
     animation-iteration-count: infinite;
 }
 
-@keyframes disco {
-    0% {
-        background-image: radial-gradient(rgb(255, 0, 0), green);
-    }
-    100% {
-        background-image: radial-gradient(yellow, white);
-    }
-}
-div {
-    position: relative;
-    border-radius: 50%;
-    margin: 50px;
-    width: 20px;
-    height: 20px;
-}
 .escama1 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama2 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama3 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama4 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 4s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama5 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 5s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama6 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 6s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama7 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 7s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama8 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 8s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama9 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 9s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-.escama10 {
-    animation-name: escama;
-    animation-duration: 3s;
-    animation-delay: 10s;
-    animation-timing-function: ease-in;
+    position: relative;
+    top: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation-name: disco;
+    animation-duration: 10s;
+    animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-@keyframes escama {
+@keyframes sol {
     0% {
         background-color: rgb(255, 0, 0);
         transform: scale(100%);
         box-shadow: 0px 0px 20px rgb(247, 0, 0), 
-        0px 0px 40px rgb(255, 238, 0),
-        0px 0px 60px rgb(60, 255, 1), 
-        0px 0px 80px rgb(1, 255, 242),
-        0px 0px 100px rgb(1, 39, 255), 
-        0px 0px 120px rgb(234, 0, 255);
+        0px 0px 40px rgb(255, 174, 0),
+        0px 0px 60px rgb(255, 238, 0);
+        transform: rotate(0deg);
+        transition: all 10s;
     }
     50% {
         background-color: rgb(255, 251, 0);
         transform: scale(120%);
         box-shadow: 0px 0px 20px rgb(247, 0, 0), 
-        0px 0px 40px rgb(255, 238, 0),
-        0px 0px 60px rgb(60, 255, 1), 
-        0px 0px 80px rgb(1, 255, 242),
-        0px 0px 100px rgb(1, 39, 255), 
-        0px 0px 120px rgb(234, 0, 255);
+        0px 0px 40px rgb(255, 174, 0),
+        0px 0px 60px rgb(255, 238, 0);
+        transform: rotate(120deg);
+        transition: all 10s;
     }
     100% {
-        background-color: rgb(0, 26, 255);
+        background-color: rgb(255, 0, 0);
         transform: scale(150%);
         box-shadow: 0px 0px 20px rgb(247, 0, 0), 
-        0px 0px 40px rgb(255, 238, 0),
-        0px 0px 60px rgb(60, 255, 1), 
-        0px 0px 80px rgb(1, 255, 242),
-        0px 0px 100px rgb(1, 39, 255), 
-        0px 0px 120px rgb(234, 0, 255);
+        0px 0px 40px rgb(255, 174, 0),
+        0px 0px 60px rgb(255, 238, 0);
+        transform: rotate(360deg);
+        transition: all 10s;
+    }
+}
+
+@keyframes disco {
+    0% {
+        background-image: radial-gradient(rgb(0, 17, 255), green);
+        perspective: 1000px;
+        transform: perspective(1000px) rotateY(45deg);
+    }
+    100% {
+        background-image: radial-gradient(rgb(0, 255, 34), rgb(255, 255, 255));
     }
 }
