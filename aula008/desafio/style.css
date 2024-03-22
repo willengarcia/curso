@@ -2,7 +2,20 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: content-box;
 }
+body {
+    background-color: rgba(23, 43, 23, 0.582);
+}
+h2 {
+    color: rgb(37, 46, 21);
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(71, 54, 5);
+}
+
 header {
     height: 160px;
     margin: auto;
@@ -21,14 +34,9 @@ nav ul li {
 }
 nav ul li:hover {
     background-color: rgb(39, 20, 7);
-    color: rgb(114, 90, 16);
     border-radius: 10px;
     transform: scale(105%);
     transition: all 0.3s;
-}
-nav a {
-    text-decoration: none;
-    color: rgb(110, 83, 7);
 }
 header img {
     position: relative;
@@ -36,7 +44,7 @@ header img {
     left: 10%;
 }
 
-/* Sessão */
+/* Sessão e Artigos */
 section {
     margin: auto;
     width: 80%;
@@ -45,10 +53,13 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 article {
     margin: 5px;
 }
+
+/* Artigo Sobre: video e mapa */
 #sobre {
     width: 710px;
     display: flex;
@@ -62,4 +73,85 @@ article {
 #mapa {
     width: 400px;
     margin-left: 105px;
+}
+
+/* Artigo Visita: formulario e galeria */
+#visita {
+    width: 350px;
+}
+.formulario {
+    background-color: rgba(99, 89, 89, 0.514);
+}
+form {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+form label {
+    font-size: 20px;
+    margin-right: 5px;
+}
+form input {
+    margin-left: 5px;
+}
+form #botao {
+    background-color: rgba(85, 107, 47, 0.61);
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+form #iqtd {
+    width: 50px;
+}
+.galeria {
+    background-color: antiquewhite;
+}
+.fotos {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fotos div{
+    background-image: url('img/fundo-foto.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fotos  img {
+    width: 100px;
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+    float: top;
+    width: 80%;
+    margin: auto;
+}
+footer div {
+    background-image: url('img/fundo-rodape.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 2px;
+}
+footer ul {
+    margin: auto;
+    text-align: center;
+}
+footer li {
+    display: inline-block;
+    padding: 4px;
+    margin: 10px;
+}
+footer p {
+    text-align: center;
+    margin-bottom: 10px;
 }
