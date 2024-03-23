@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pai {
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+.filhos {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+#filho1 {
+    
+}
