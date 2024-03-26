@@ -55,7 +55,6 @@ header button:hover {
 /* Artigos Anuncio */
 section {
     clear: both;
-    max-width: 80%;
     margin: auto;
 }
 article#anuncio {
@@ -65,6 +64,8 @@ article#anuncio {
     justify-content: center;
     align-items: center;
     color: aliceblue;
+    max-width: 80%;
+    margin: auto;
 }
 article#anuncio > img {
     width: 69%;
@@ -109,11 +110,89 @@ div.mensagem  aside > img:hover {
     transition: 0.3s;
 }
 
-/* Artigos opcao */
+/* Artigo Saiba */
+article#saiba {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    margin-bottom: 1px;
+}
+article#saiba .saiba1 {
+    margin: 50px;
+}
+article#saiba img {
+    width: 65%;
+    margin: 50px;
+}
+article#saiba button {
+    padding: 6px 3%;
+    border-radius: 5%;
+    background-color: rgb(38, 38, 240);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+/* Artigo Celular */
+article#celular {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    margin-bottom: 1px;
+}
+article#celular img {
+    width: 30%;
+    margin: 50px;
+
+}
+article#celular .celular1 {
+    margin: 50px;
+}
+article#celular button {
+    padding: 6px 3%;
+    border-radius: 5%;
+    background-color: rgb(38, 38, 240);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+/* Artigos Opção */
 article#opcao {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    background-color: rgb(212, 212, 212);
+    margin-bottom: 1px;
+}
+article#opcao div {
+    width: 20%;
+    margin: auto;
+}
+article#opcao img {
+    width: 120%;
+}
+
+/* Footer */
+footer ul {
+    width: 50%;
+    margin: auto;
+}
+footer li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
 }
