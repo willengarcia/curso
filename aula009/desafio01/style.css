@@ -132,7 +132,7 @@ article#saiba .saiba1 {
 article#saiba .saiba1  h1{
     font-weight: 500;
     font-size: 290%;
-    text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.589);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.589);
 }
 article#saiba .saiba1  p {
     font-size: 17px;
@@ -176,7 +176,7 @@ article#celular .celular1 {
 article#celular .celular1  h1{
     font-weight: 500;
     font-size: 290%;
-    text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.589);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.589);
 }
 article#saiba .celular1  p {
     font-size: 17px;
