@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* Desktop */
+@media screen and (min-width:993px) and (max-width:1700px) {
+    * {
+        box-sizing: content-box;
+        padding: 0%;
+        margin: 0%;
+    }
+    a {
+        color: rgb(134, 68, 21);
+        text-decoration: none;
+    }
+    li > a:hover, li:hover {
+        color: rgb(116, 55, 14);
+        background-color: darkorange;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    /* Cabeça */
+    header {
+        max-width: 80%;
+        margin: auto;
+    }
+    header img {
+        margin: 10px;
+        float: left;
+        width: 15%;
+    }
+    header nav {
+        float: right;
+    }
+    header ul {
+        display: inline-block;
+    }
+    header li {
+        padding: 5px;
+        margin: 10px;
+        border-radius: 10%;
+        list-style-type: none;
+        cursor: pointer;
+    }
+    header button {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10%;
+        padding: 5px;
+        color: aliceblue;
+        font-weight: bold;
+        display: inline-block;
+    }
+    header button:hover {
+        background-color: burlywood;
+        color: chocolate;
+        border: 1px solid black;
+        transition: 0.3s;
+    }
+    
+    /* Artigos Anuncio */
+    section {
+        clear: both;
+        margin: auto;
+    }
+    article#anuncio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        max-width: 80%;
+        margin: auto;
+    }
+    article#anuncio > img {
+        width: 69%;
+    }
+    div.mensagem h1 {
+        font-weight: 500;
+        text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.589);
+    }
+    div.mensagem p {
+        font-size: 17px;
+        text-decoration: underline;
+        color: rgb(53, 37, 7);
+    }
+    div.mensagem input {
+        width: 70%;
+        padding: 5px;
+        font-weight: 500;
+    }
+    div.mensagem button {
+        padding: 6px 3%;
+        border-radius: 0% 5% 5% 0%;
+        background-color: rgb(38, 38, 240);
+        color: white;
+        border: none;
+    }
+    div.mensagem aside {
+        margin-top: 60px;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    div.mensagem h6 {
+        display: inline-block;
+        font-weight: bolder;
+    }
+    div.mensagem  aside > img {
+        margin-left: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    div.mensagem  aside > img:hover {
+        background-color: rgb(248, 248, 246);
+        transform: scale(105%);
+        transition: 0.3s;
+    }
+    
+    /* Artigo Saiba */
+    article#saiba {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        background-color: rgb(212, 212, 212);
+        margin: auto;
+        margin-bottom: 1px;
+    }
+    article#saiba .saiba1 {
+        margin: 50px;
+    }
+    article#saiba img {
+        width: 65%;
+        margin: 50px;
+        display: block;
+    }
+    article#saiba button {
+        padding: 6px 3%;
+        border-radius: 5%;
+        background-color: rgb(38, 38, 240);
+        color: white;
+        border: none;
+        font-weight: bold;
+        display: block;
+        margin: 0%;
+    }
+    
+    /* Artigo Celular */ 
+    article#celular {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        background-color: rgb(212, 212, 212);
+        margin: auto;
+        margin-bottom: 1px;
+    }
+    article#celular img {
+        width: 30%;
+        margin: 50px;
+        display: block;
+    }
+    article#celular .celular1 {
+        margin: 50px;
+    }
+    article#celular button {
+        padding: 6px 3%;
+        border-radius: 5%;
+        background-color: rgb(38, 38, 240);
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin: 0px;
+    }
+    
+    /* Artigos Opção */
+    article#opcao {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: rgb(212, 212, 212);
+        margin-bottom: 1px;
+    }
+    article#opcao div {
+        width: 20%;
+        margin: auto;
+    }
+    article#opcao img {
+        width: 120%;
+    }
+    
+    /* Footer */
+    footer ul {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    footer li{
+        display: inline-block;
+        padding: 10px;
+        margin-left: 10px;
+    }
+}
