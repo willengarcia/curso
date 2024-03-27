@@ -39,19 +39,31 @@
         list-style-type: none;
         cursor: pointer;
     }
-    header button {
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 10%;
-        padding: 5px;
+    header nav > a {
         color: aliceblue;
-        font-weight: bold;
-        display: inline-block;
+        position: static;
+        float: right;
     }
-    header button:hover {
-        background-color: burlywood;
-        color: chocolate;
-        border: 1px solid black;
-        transition: 0.3s;
+    header nav a img {
+        width: 60%;
+        padding: 3px;
+        background-color: darkcyan;
+        border-radius: 50%;
+        animation-name: pulsar;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    
+    }
+    @keyframes pulsar {
+        0% {
+            transform: scale(110%);
+            box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.349);
+        }
+        100% {
+            transform: scale(100%);
+        }
     }
     
     /* Artigos Anuncio */
