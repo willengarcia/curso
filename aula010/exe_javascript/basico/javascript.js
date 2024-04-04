@@ -136,7 +136,7 @@ if ((idade >= 0)  && (idade < 15)){
             (instrução se não for nenhuma das opções)
             break
     }
-*/
+
 var opcao = prompt('Digite uma opção: ')
 switch (opcao) {
     case 'soma':
@@ -188,3 +188,154 @@ switch (opcao) {
         document.write('<p>Você escolheu uma opção inválida!</p>')
         break;
 }
+*/
+// Desafio 180 IMC
+/*
+var nome = prompt('Digite seu nome: ')
+var altura = prompt('Digite sua altura em centimetros: ')
+var peso = prompt('Digite seu peso: ')
+
+var a = parseFloat(altura)
+var p = parseFloat(peso)
+
+var altura_metros = a/100
+var IMC = p / (altura_metros * altura_metros)
+
+if (IMC < 16){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Baixo peso muito grave')
+}
+else if(IMC >= 16 && IMC <= 16.99){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Baixo peso grave')
+}
+
+else if((IMC >= 17) && (IMC <= 18.49)){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Baixo peso')
+}
+else if((IMC >= 18.50) && (IMC <= 24.99)){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Peso normal')
+}
+else if((IMC >= 25) && (IMC <= 29.99)){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Sobrepeso')
+}
+else if((IMC >= 30) && (IMC <= 34.99)){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Sobrepeso grau I')
+}
+
+else if((IMC >= 35) && (IMC <= 39.99)){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Sobrepeso grau II')    
+}
+else if(IMC >= 40){
+    document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Obesidade III')    
+}
+else{
+    document.write('Deu errado, IMC: '+IMC)
+}
+*/
+// declarando Funções 
+/* 
+    O script desconsidera se colocar mais parâmetros
+    Se esquecer de colocar o valor de algum parâmetro, ela será Undefined, portanto a saída será NNan
+    function nome_funcao(parametros){
+        var teste = parametros
+        return teste
+    }
+
+function imc () {
+    var nome = prompt('Digite seu nome: ')
+    var altura = prompt('Digite sua altura em centimetros: ')
+    var peso = prompt('Digite seu peso: ')
+
+    var a = parseFloat(altura)
+    var p = parseFloat(peso)
+
+    var altura_metros = a/100
+    var IMC = p / (altura_metros * altura_metros)
+
+    if (IMC < 16){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Baixo peso muito grave')
+    }
+    else if(IMC >= 16 && IMC <= 16.99){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Baixo peso grave')
+    }
+
+    else if((IMC >= 17) && (IMC <= 18.49)){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Baixo peso')
+    }
+    else if((IMC >= 18.50) && (IMC <= 24.99)){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Peso normal')
+    }
+    else if((IMC >= 25) && (IMC <= 29.99)){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Sobrepeso')
+    }
+    else if((IMC >= 30) && (IMC <= 34.99)){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Sobrepeso grau I')
+    }
+
+    else if((IMC >= 35) && (IMC <= 39.99)){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Sobrepeso grau II')    
+    }
+    else if(IMC >= 40){
+        document.write(nome+' possui índice de massa corporal igual a '+IMC+', sendo classificado como: Obesidade III')    
+    }
+    else{
+        document.write('Deu errado, IMC: '+IMC)
+    }
+}
+imc()
+*/
+// Escopos
+/*
+    Existem 3 tipos de escopo: global, função e bloco
+*/
+
+// Funções Calback é funções com parametros chamando outras funções
+/* 
+    Exemplo
+function html(t, c, st){
+    document.write('<h1>'+t+'</h1>')
+    document.write('<p>'+c+'</p>')
+}
+
+function style(h1, p){
+    document.write('<style> h1{color:red}</style>')
+}
+html('Estou muito Feliz', 'Esse é um titulo', style())
+
+function exibirArtigo (id, callbackSucesso, callbackErro) {
+    if (true) {
+        callbackSucesso('Funções callback em JS', 'Funções de Callback...')
+    } else {
+        callbackErro('Erro ao recuperar dados')
+    }
+}
+//funções anônimas
+var callbackSucesso= function(titulo, descricao){
+    document.write('<h1>'+titulo+'</h1>')
+    document.write('<p>'+descricao+'</p>')
+}
+var callbackErro= function(erro){
+    document.write('<h1>'+erro+'</h1>')
+}
+exibirArtigo(1, callbackSucesso('Isso é um teste de Callbak', 'Callback nada mais é que uma função dada como parâmetro'), callbackErro)
+*/
+
+// Visitar o w3schooll
+// var nome = 'Jorge Sant Ana'
+// console.log(nome.length) - Tamanho
+// console.log(nome.charAt(2)) -  Retorna o caractere de acordo com o indiíce
+// console.log(nome.indexOf('g')) - retorna o indice de acordo com o caractere escolhido
+// console.log(nome.replace('Sant Ana', 'Silva')) - Substitui o caractere por outro
+// console.log(nome.substring(0,6)) - Pega de um indice ate a outro
+// console.log(nome.trim()) - Remove os espaços da extremidades
+
+// Funções Matemáticas
+// var x = 10.380 
+// console.log(Math.ceil(x)) - Força o arrendodamento para cima
+// console.log(Math.floor(x))  -Força o arrendodamento para baixo
+// console.log(Math.round(x)) - Ele arredonda automáticamente
+// console.log(Math.random(0, 10)) - Mostra um número entre 0 e 1
+
+// Manipulação de Datas
+
+var data = new Date()
+data
