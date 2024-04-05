@@ -337,5 +337,67 @@ exibirArtigo(1, callbackSucesso('Isso é um teste de Callbak', 'Callback nada ma
 
 // Manipulação de Datas
 
+/*
 var data = new Date()
-data
+// console.log(data.getDate()) - Pega o dia atual
+// console.log(data.getMonth() + 1) - Pega o mês atual (0-11)
+// console.log(data.getFullYear()) - Pega o ano atual
+
+document.write(data.toString())
+
+document.write('<hr/>')
+document.write('<h3>Adicionando e removendo Dias</h3>')
+data.setDate(data.getDate()-1) // Calculando dias
+document.write(data.toString())
+document.write('<hr/>')
+
+document.write('<h3>Adicionando e removendo Mês</h3>')
+data.setMonth(data.getMonth()-1) // Calculando mês
+document.write(data.toString())
+document.write('<hr/>')
+
+document.write('<h3>Adicionando e removendo Ano</h3>')
+data.setFullYear(data.getFullYear()+100) // Calculando Ano
+document.write(data.toString())
+document.write('<hr/>')
+
+//Calculando as Datas
+var data1 = new Date(2017, 0, 15)
+var data2 = new Date(2017, 1, 23)
+document.write('<h3>Calculando dias</h3>')
+document.write(data1.toString())
+document.write('<br/>')
+document.write(data2.toString())
+document.write('<hr/>')
+// converter para algo que deve ser calculado
+document.write(data1.getTime())
+document.write('<br/>')
+document.write(data2.getTime())
+document.write('<hr/>')
+// encontrar a qtd de milissegundos entre data1 e data2
+document.write(Math.abs(data1.getTime() - data2.getTime()))
+// 1 dia > 24h, 1h > 60m, 1m > 60s, 1s > 1000milisegundos
+document.write('<h3>1 dia tem: '+ (1*24*60*60*1000)+ ' milissegundos </h3>')
+var mili_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+var mili_por_dia = 1*24*60*60*1000
+var conversao = mili_entre_datas/mili_por_dia
+document.write('<h3>Diferenças entre as datas: '+data1+' e '+data2+': '+ Math.ceil(conversao)+ ' dias </h3>')
+*/
+
+/*
+var num1 = prompt('Digite um numero: ')
+var num2 = prompt('Digite outro número: ')
+var op = prompt('soma, ou subtração?')
+var n1 = parseInt(num1)
+var n2 = parseInt(num2)
+var func = function(n1, n2, op){
+    if ((op == 'soma') || (op == '+')){
+        var resultado = n1+n2
+        document.write('<h3>O resultado é: </h3>'+resultado)
+    } else if((op == 'subtração') || (op == '-')){
+        var resultado = n1-n2
+        document.write('<h3>O resultado é: </h3>'+resultado)
+    }
+}
+func(n1, n2, op)
+*/
