@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .cor1{
+            background-color: aquamarine;
+        }
+        .cor2{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo do DOM</h1>
+    <h2>Testando ID</h2>
+    <h2>Testando TagName</h2>
+    <h2>Testando ClassName</h2>
+    <h2>Testando Name</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Manipulando valores</legend>
+
+            <label for="indeciso">Digite algo:</label>
+            <input type="text" name="indeciso" id="entrada" onkeyup="distribuiCaractere()">
+
+            <label for="inumero">Número:</label>
+            <input type="text" name="numero" id="inumero">
+
+            <label for="iletra">Letra:</label>
+            <input type="text" name="letra" id="iletra">
+        </fieldset>
+    </form>
+
+    <h2>Manipulando estilos</h2>
+    <button  onclick="modificaEstilo('#ff0000')">Vermelho</button>
+    <button onclick="modificaEstilo('#00ff00')">Verde</button>
+    <button onclick="modificaEstilo('#0000ff')">Azul</button>
+    <div style="width: 50px; height: 50px; border: 1px solid black;" id="container"></div>
+
+    <h2>Modificando estilos por classes</h2>
+    <button onclick="modifica_classe()">Modifica classe</button>
+    <div style="width: 50px; height: 50px; border: 1px solid black;" id="vermelho" class="cor1"></div>
+    <div style="width: 50px; height: 50px; border: 1px solid black;" id="azul" class="cor1"></div>
+
+    <div style="width: 50px; height: 50px; border: 1px solid black;" id="amarelo" class="cor2"></div>
+    <div style="width: 50px; height: 50px; border: 1px solid black;" id="rosa" class="cor2"></div>
+
+    <h2>Teste de Conhecimento</h2>
+    <input type="text" name="iteste" id="teste" onfocus="modifica_background('yellow')" onblur="recupera_valor()">
+    <script src="DOM.js"></script>
+</body>
+</html>

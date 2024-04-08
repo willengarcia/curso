@@ -8,7 +8,16 @@
 </head>
 <body>
     <h1 id="teste">Introdução a JS</h1>
-    <div onmouseout="acao()" style="background-color: blanchedalmond; width: 100px; height: 100px; border: 1px solid black;"></div>
-    <script src="javascript.js"></script> <!-- Sempre bom colocar ele no final, por conta da redenrização-->
+    <form action="#">
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" onchange="acao()">
+        <select name="iopcao" id="opao" onchange="acao()">
+            <option value="1">Opcao 1</option>
+            <option value="2">Opcao 2</option>
+            <option value="3">Opcao 3</option>
+            <option value="4">Opcao 4</option>
+        </select>
+    </form>
+    <script src="eventos.js"></script> <!-- Sempre bom colocar ele no final, por conta da redenrização-->
 </body>
 </html>
