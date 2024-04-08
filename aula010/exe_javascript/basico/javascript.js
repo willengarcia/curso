@@ -401,3 +401,18 @@ var func = function(n1, n2, op){
 }
 func(n1, n2, op)
 */
+
+// Eventos
+/* 
+    Eventos Mouse
+    onclick - quando o usuário clica
+    ondbclick - quando clica duas vezes
+    onmouseup - que é acionado quando clica e solta
+    onmouseover - que é acionado quando o cursor do mouse sobrepoe o elemento
+    onmouseout - que é acionado quando o cursor do mouse sai de algum elemento
+    Para acessar esses eventos, basta mexer na propriedade, e pode usar vários ao mesmo tempo
+*/
+
+function acao (){
+     alert('oi')
+}
