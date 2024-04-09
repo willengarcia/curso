@@ -1,63 +1,98 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+<html>
+	<head>
+		<title>Calculadora</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <style>
-        #calc{
-            width: 470px;
-            height: 320px;
-            background-color: rgb(110, 182, 245);
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-        }
-        .botoes{
-            width: 50px;
-            height: 75px;
-        }
-        #operacoes{
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .numeros{
-            width: 130px;
-            height: 75px;
-            margin: 2px;
-        }
-        #resultado{
-            width: 265px;
-            height: 75px;
-        }
+      .calculadora {
+        margin-top: 40px;
+        border: solid 1px #000;
+        padding: 20px;
+        background-color: #2E2E2E;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px #000;
+      }
+
+      .btn {
+        width: 60px;
+        height: 50px;
+        margin: 5px;
+        box-shadow: 1px 1px 1px #000;
+      }
+
+      .clear {
+        width: 130px;
+      }
+
+      .enter {
+        height: 110px;
+      }
+
+      .zero {
+        width: 130px;
+      }
+
+      .resultado {
+        text-align: right;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: solid 1px #000;
+        box-shadow: 1px 1px 1px #000;
+      }
+
     </style>
-</head>
-<body>
-    <h1>Calculadora</h1>
-    <h2>Resultado:</h2>
-    <div id="calc">
-        <div id="operacoes">
-            <button class="botoes" id="adicao" onclick="operacao()">+</button>
-            <button class="botoes" id="subtracao" onclick="operacao()">-</button>
-            <button class="botoes" id="multiplicacao" onclick="operacao()">*</button>
-            <button class="botoes" id="divisao" onclick="operacao()">/</button>
+	</head>
+
+  <body style="background: #D9D9D9">
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <br />
+
+          <div class="calculadora">
+            <input type="text" class="form-control resultado" placeholder="0" disabled="disabled" id="resultado"/>
+            
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg clear font-weight-light" onclick="calcular('acao', 'c')">C</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', '/')">/</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', '*')">x</button>
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 7)">7</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 8)">8</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 9)">9</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', '-')">-</button>
+            </div>
+            
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 4)">4</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 5)">5</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 6)">6</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', '+')">+</button>
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 1)">1</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 2)">2</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('valor', 3)">3</button>
+              <button type="button" class="btn btn-dark btn-lg enter" onclick="calcular('acao', '=')">=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button type="button" class="btn btn-dark zero btn-lg font-weight-light" onclick="calcular('valor', 0)">0</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calcular('acao', '.')">.</button>
+            </div>
+
+          </div>
         </div>
-        <div id="num">
-            <button class="numeros">1</button>
-            <button class="numeros">2</button>
-            <button class="numeros">3</button>
-            <button class="numeros">4</button>
-            <button class="numeros">5</button>
-            <button class="numeros">6</button>
-            <button class="numeros">7</button>
-            <button class="numeros">8</button>
-            <button class="numeros">9</button> 
-            <button class="numeros">0</button> <button id="resultado">=</button>
-        </div>
-    </div>
+      </div>
+    </div>    
     <script src="calc.js"></script>
-</body>
+  </body>	
+
 </html>
