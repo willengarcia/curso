@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+* {
+    font-family: "Jersey 10", sans-serif;
+}
+body { 
+    background-image: url('imagens/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px black;
+    font-size: 120px;
+}
+select, button { 
+    padding: 0% 7%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: 3% auto;
+}
+.mosca {
+    position: relative;
+    width: 100px;
+}
+.mosca1{
+    left: 300px;
+    bottom: 500px;
+    rotate: 30deg;
+}
+.mosca2{
+    right: 300px;
+    bottom: 500px;
+    rotate: 30deg;
+}
+.mosca3{
+    right: 600px;
+    bottom: 200px;
+    rotate: 30deg;
+}
+.mosca4{
+    left: 600px;
+    bottom: 500px;
+    rotate: 30deg;
+}

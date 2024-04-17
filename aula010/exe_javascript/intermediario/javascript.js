@@ -59,7 +59,6 @@ function order(){
 }
 */
 
-
 // Estrutura de Repetição
 /* 
     Repetição While
