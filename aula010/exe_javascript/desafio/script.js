@@ -1,5 +1,5 @@
 function start(){
-    window.location.replace('http://127.0.0.1:5500/aula010/exe_javascript/desafio/start.html')
+    window.location.replace('https://willengarcia.github.io/curso/aula010/exe_javascript/desafio/start.html')
     var dificuldade = document.getElementById('nivel').value
     console.log(dificuldade)
 }    
