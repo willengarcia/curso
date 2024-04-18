@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start</title>
+    <title>Jogue!</title>
     <link rel="stylesheet" href="start.css">
     <script src="script.js">
     </script>
 </head>
 <body>
     <div>
-        <img src="imagens/coracao_cheio.png" alt="coracao">
-        <img src="imagens/coracao_cheio.png" alt="coracao">
-        <img src="imagens/coracao_cheio.png" alt="coracao">
+        <img id="v1" src="imagens/coracao_cheio.png" alt="coracao">
+        <img id="v2" src="imagens/coracao_cheio.png" alt="coracao">
+        <img id="v3" src="imagens/coracao_cheio.png" alt="coracao">
         <h2>Tempo restante: <span id="time">1</span></h2>
     </div>
     <script>
         aparecerMosca()
+        setInterval(function(){
+            aparecerMosca()
+        }, 2000)
+        var tempo = 99
+        setInterval(function(){
+            tempo--
+            document.getElementById('time').innerText = tempo
+            if(tempo<=0){
+                window.location.replace('http://127.0.0.1:5500/aula010/exe_javascript/desafio/vitoria.html')
+            }
+        }, 800)
     </script>
 </body>
 </html>
