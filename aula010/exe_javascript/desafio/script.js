@@ -12,7 +12,7 @@ function aparecerMosca(){
         document.getElementById('v'+vida).src = 'imagens/coracao_vazio.png'
         vida++
         if (vida > 3){
-            window.location.replace('http://127.0.0.1:5500/aula010/exe_javascript/desafio/game_over.html')
+            window.location.replace('https://willengarcia.github.io/curso/aula010/exe_javascript/desafio/game_over.html')
         }
         
     }
