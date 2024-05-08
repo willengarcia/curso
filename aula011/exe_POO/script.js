@@ -123,8 +123,25 @@ class Papagaio extends Passaro{
 }
 // let dog = new Cachorro()
 // let bird = new Passaro()
-let papagaio = new Papagaio('curto' ,true, 'verde', 20, 120)
 // dog.dormir() // pode acessar mesmo o metodo não estando na class cachorro
 // bird.dormir()
 // papagaio.dormir() // Aqui as heranças são como cascatas de herança
+// console.log(papagaio)
+
+// POLIMORFISMO
+class Avestruz extends Passaro{
+    constructor(){
+        super('curto', 'branco', 5, 120)
+    }
+    enterrarCabeca(){
+        console.log('Enterrou a cabeca')
+    }
+    voar(){
+        console.log('Não sabe voar') // Ele sobescreve o metodo do objeto pai 'Passaro'
+    }
+}
+let papagaio = new Papagaio('curto' ,true, 'verde', 20, 120)
 console.log(papagaio)
+papagaio.voar()
+let avestruz = new Avestruz()
+avestruz.enterrarCabeca()
