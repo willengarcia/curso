@@ -80,18 +80,51 @@ class Tv{
 // canal.canalAtivo = 0
 // console.log(canal.canalAtivo)
 
-class Orcamento{
-    constructor(valorDinheiro, valorDeposito, parcelamento){
-        this.valorTotal = valorDinheiro
-        this.valorDividas = Array()
-        this.valorDeposito = valorDeposito
-        this.parcelamento = parcelamento
+class Animal{
+    constructor(cor, tamanho, peso){
+        this.cor = cor
+        this.tamanho = tamanho
+        this.peso = peso
+        // Essa é a classe pai, a qual serve como ponte para as outras classes que irão utilizar os mesmos atributos, e o mesmo serve para os metodos
     }
-    depositaDinheiro(){
-        this.valorTotal += this.valorDeposito
-        console.log(`Você depositou R$${this.valorDeposito}, e agora tem um total de R$${this.valorTotal} `)
-    }
-    dividas(){
-        this.valor
+    dormir(){
+        console.log('Dormir')
     }
 }
+// class Cachorro extends Animal{ // Para fazer essa 'ponte', basta ultilizar o 'extend' e logo em seguida, a classe pai
+//     constructor(){
+//         super() // tem que utilizar essa função sempre antes da palavra 'this', ele fornece acesso a classe pai, por isso é importante!
+//         this.orelhas = 'Grandes e caídas'
+//     }
+//     correr(){
+//         console.log('Correr')
+//     }
+//     rosnar(){
+//         console.log('Rosnar')
+//     }
+// }
+class Passaro extends Animal{
+    constructor(bico, cor, tamanho, peso){// pode colocar como parametro para depois chamar na classe filha
+        super(cor, tamanho, peso) 
+        this.bico = bico
+    }
+    voar(){
+        console.log('Voar')
+    }
+}
+class Papagaio extends Passaro{
+    constructor(bico, fala, cor, tamanho, peso){
+        super(bico, cor, tamanho, peso) // Atribuindo o parametro 'bico'
+        this.falar = fala
+    }
+    fala(){
+        console.log('Falando')
+    }
+}
+// let dog = new Cachorro()
+// let bird = new Passaro()
+let papagaio = new Papagaio('curto' ,true, 'verde', 20, 120)
+// dog.dormir() // pode acessar mesmo o metodo não estando na class cachorro
+// bird.dormir()
+// papagaio.dormir() // Aqui as heranças são como cascatas de herança
+console.log(papagaio)
