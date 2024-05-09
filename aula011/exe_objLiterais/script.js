@@ -56,24 +56,31 @@ pessoa.dizerOi() // Chamando a função
 function aumentaTamanho(){
     let valor = document.getElementById('tamanho').value
     console.log(valor)
-    document.getElementById('fonte').style.fontSize = valor+'px'
     if(valor > 90){
-        document.getElementById('fonte').style.color = 'red'
+        document.getElementById('fonte').style.color = 'white'
+        document.getElementById('fonte').style.backgroundColor = 'red'
     }else if(valor > 70){
         document.getElementById('fonte').style.color = 'blue'
+        document.getElementById('fonte').style.backgroundColor = 'yellow'
     }else if(valor > 60){
         document.getElementById('fonte').style.color = 'yellow'
+        document.getElementById('fonte').style.backgroundColor = 'blue'
     }else if(valor > 50){
         document.getElementById('fonte').style.color = 'orange'
+        document.getElementById('fonte').style.backgroundColor = 'pink'
     }else if(valor > 40){
         document.getElementById('fonte').style.color = 'darkblue'
+        document.getElementById('fonte').style.backgroundColor= 'gray'
     }else if(valor > 30){
         document.getElementById('fonte').style.fontFamily = 'monospace'
     }else if(valor > 20){
-        document.getElementById('fonte').style.color = '#83f28f'
+        document.getElementById('fonte').style.color = 'brown'
+        document.getElementById('fonte').style.backgroundColor = '#2a5f4d'
     }else if(valor > 10){
-        document.getElementById('fonte').style.color = '#13d28a'
+        document.getElementById('fonte').style.color = 'white'
+        document.getElementById('fonte').style.backgroundColor = 'black'
     }else if(valor < 10){
-        document.getElementById('fonte').style.color = '#123456'
+        document.getElementById('fonte').style.color = '#1a3d56'
+        document.getElementById('fonte').style.backgroundColor = 'black'
     }
 }
