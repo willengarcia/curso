@@ -50,3 +50,30 @@ pessoa.dizerOi = () => {
     console.log('OI')
 } // Atribuindo uma função dentro do obj pessoa
 pessoa.dizerOi() // Chamando a função
+
+// -------------------------------------
+// Aumentando tamanho da Letra Dinamicamente
+function aumentaTamanho(){
+    let valor = document.getElementById('tamanho').value
+    console.log(valor)
+    document.getElementById('fonte').style.fontSize = valor+'px'
+    if(valor > 90){
+        document.getElementById('fonte').style.color = 'red'
+    }else if(valor > 70){
+        document.getElementById('fonte').style.color = 'blue'
+    }else if(valor > 60){
+        document.getElementById('fonte').style.color = 'yellow'
+    }else if(valor > 50){
+        document.getElementById('fonte').style.color = 'orange'
+    }else if(valor > 40){
+        document.getElementById('fonte').style.color = 'darkblue'
+    }else if(valor > 30){
+        document.getElementById('fonte').style.fontFamily = 'monospace'
+    }else if(valor > 20){
+        document.getElementById('fonte').style.color = '#83f28f'
+    }else if(valor > 10){
+        document.getElementById('fonte').style.color = '#13d28a'
+    }else if(valor < 10){
+        document.getElementById('fonte').style.color = '#123456'
+    }
+}
