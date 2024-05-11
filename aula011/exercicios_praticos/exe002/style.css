@@ -1,0 +1,10 @@
+section {
+    height: 98vh;
+}
+#bola { 
+    border-radius: 50%;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}

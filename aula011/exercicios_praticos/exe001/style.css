@@ -4,7 +4,7 @@
 }
 body{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-areas: 
     "nav nav nav"
     "cabeca cabeca cabeca"
@@ -43,7 +43,7 @@ header {
     background-color: cadetblue;
     padding-top: 5%;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
     align-items: center;
     justify-content: center;
