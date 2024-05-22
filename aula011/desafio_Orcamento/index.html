@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navegacao">
+        <ul>
+            <li><img src="imagem/logo.png" alt="POrquinho"></li>
+            <li><a href="#" id="cadastro">Cadastro</a></li>
+            <li><a href="#" id="consulta">Consulta</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Registro de nova despesa</h1>
+        <div class="infor">
+            <input type="date" name="data" id="data" required>
+            <select name="selecao" id="selecao" required>
+                <option>Tipo</option>
+                <option value="1">Alimentação</option>
+                <option value="2">Educação</option>
+                <option value="3">Lazer</option>
+                <option value="4">Saúde</option>
+                <option value="5">Transporte</option>
+            </select>
+            <input type="text" name="descricao" id="descricao" placeholder="Descrição: Gastos com comida no passeio" required>
+            <input type="text" name="valor" id="valor" placeholder="Valor: 255.5" required>
+            <button class="botoes">Adicionar</button>
+        </div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
