@@ -18,10 +18,11 @@ consulta.addEventListener('click', (evento)=>{
     const text = document.querySelector('h1')
     const tabela = document.getElementById('tabela')
     text.textContent = 'Consulta de despesas'
-    tabela.style.display = 'block'
-    tabela.style.width = '100%'
+    tabela.style.opacity = '1'
 })
 cadastro.addEventListener('click', (evento)=>{
     const text = document.querySelector('h1')
+    const tabela = document.getElementById('tabela')
+    tabela.style.opacity = '0'
     text.textContent = 'Registro de nova despesa'
 })

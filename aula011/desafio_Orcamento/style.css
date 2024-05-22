@@ -55,14 +55,36 @@ select {
     grid-column-end: 4;
 }
 
-table {
+#tabela {
     border-collapse: collapse;
-    display: none;
+    opacity: 0;
     width: 100%;
+    margin: auto;
+    margin-top: 3rem;
 }
 th{
     padding: .75rem;
     font-size: 20px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+}
+@media (max-width:1000px) {
+    .infor {
+        display: flex;
+        flex-direction: column;
+
+    }
+    h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+    input {
+        padding: 2px;
+    }
+    .container {
+        width: 100%;
+    }
+    ul {
+        width: 100%;
+    }
 }
