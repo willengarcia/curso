@@ -112,4 +112,15 @@ tbody >tr:nth-child(odd){
     ul {
         width: 100%;
     }
+    td {
+        padding: .75rem;
+        font-size: 14px;
+        text-align: center;
+    }
+    th{
+        padding: .75rem;
+        font-size: 16px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
 }
