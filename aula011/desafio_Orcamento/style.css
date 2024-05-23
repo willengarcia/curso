@@ -95,6 +95,10 @@ tbody >tr:nth-child(odd){
         padding: 5px;
         border-radius: 5px;
         font-size: 16px;
+        order: 1;
+    }
+    input[type=date]{
+        order:2;
     }
     select {
         padding: 5px;
@@ -108,6 +112,7 @@ tbody >tr:nth-child(odd){
         border-radius: 5px;
         width: 50%;
         margin: auto;
+        order: 3;
     }
     ul {
         width: 100%;
