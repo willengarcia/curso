@@ -11,6 +11,7 @@ const criaLinhaTabela = ()=>{
 
     for(let l =1 ; l<=4; l++){
         let dado = document.createElement('td')
+        dado.setAttribute('class', 'desc')
         linha.appendChild(dado)
     }
     return linha
