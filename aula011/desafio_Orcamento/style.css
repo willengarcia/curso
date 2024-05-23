@@ -115,7 +115,7 @@ tbody >tr:nth-child(odd){
         order: 3;
     }
     ul {
-        width: 100%;
+        width: max-content;
     }
     td {
         padding: .75rem;
