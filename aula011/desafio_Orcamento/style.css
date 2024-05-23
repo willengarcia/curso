@@ -57,7 +57,7 @@ select {
 
 #tabela {
     border-collapse: collapse;
-    opacity: 0;
+    visibility: hidden;
     width: 100%;
     margin: auto;
     margin-top: 3rem;
@@ -68,21 +68,46 @@ th{
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
+td {
+    padding: .75rem;
+    font-size: 18px;
+    text-align: center;
+}
+tbody >tr:nth-child(odd){
+    background-color: rgba(148, 146, 146, 0.719);
+}
 @media (max-width:1000px) {
     .infor {
         display: flex;
         flex-direction: column;
-
-    }
-    h1 {
-        width: 100%;
-        font-size: 20px;
-    }
-    input {
-        padding: 2px;
     }
     .container {
-        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+        width: 95%;
+    }
+    h1 {
+        width: max-content;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    input {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    select {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    button {
+        padding: 5px;
+        font-size: 16px;
+        background-color: rgba(55, 68, 248, 0.911);
+        border-radius: 5px;
+        width: 50%;
+        margin: auto;
     }
     ul {
         width: 100%;
