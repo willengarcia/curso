@@ -51,7 +51,7 @@ class Bd{
         let id = localStorage.getItem('id')
         for(let i = 1; i<= id; i++){
              let despesa = localStorage.getItem(i)
-              return console.log(despesa)
+              return console.log(i, despesa)
         }
     }
 }
@@ -80,7 +80,7 @@ function cadastrarDespesa(){
         setTimeout(function(){
             clearInterval(cronometro)
             a.remove()
-        }, 5000)
+        }, 2000)
     }else{
         const linhaCriada = criaLinhaTabela()
         const dadosFilho = [...linhaCriada.children]
@@ -96,7 +96,7 @@ function cadastrarDespesa(){
         )
         let bd = new Bd()
         bd.gravar(despesas)
-        let tempo = 5
+        let tempo = 2
         const a = alerta()
         let cronometro = setInterval(function(){
             document.querySelector('h2').textContent = 'Dados inseridos com sucesso'
@@ -106,7 +106,7 @@ function cadastrarDespesa(){
         setTimeout(function(){
             clearInterval(cronometro)
             a.remove()
-        }, 5000) // Cronometro de 5s
+        }, 2000) // Cronometro de 5s
     }
 }
 let bd = new Bd()
@@ -124,6 +124,12 @@ consulta.addEventListener('click', (evento)=>{
     text.textContent = 'Consulta de despesas'
     tabela.style.visibility = 'visible'
     botao.textContent = 'Pesquisar'
+
+    consulta.style.backgroundColor = 'white'
+    consulta.style.color = 'blue'
+
+    cadastro.style.backgroundColor = 'rgba(55, 68, 248, 0.911)'
+    cadastro.style.color = 'white'
 })
 cadastro.addEventListener('click', (evento)=>{
     const text = document.querySelector('h1')
@@ -131,4 +137,10 @@ cadastro.addEventListener('click', (evento)=>{
     tabela.style.visibility = 'hidden'
     text.textContent = 'Registro de nova despesa'
     botao.textContent = 'Adicionar'
+
+    cadastro.style.backgroundColor = 'white'
+    cadastro.style.color = 'blue'
+
+    consulta.style.backgroundColor = 'rgba(55, 68, 248, 0.911)'
+    consulta.style.color = 'white'
 })
